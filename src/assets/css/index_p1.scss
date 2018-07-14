@@ -1,0 +1,134 @@
+@import "base/transform";
+$primary-color-b: #86754d;
+$primary-color-g: #c3d600;
+$primary-color-bl: #1764a1;
+.kv {
+    width: 100%;
+    height: 80vh;
+    background-color: #666666;
+}
+
+.section {
+    h1 {
+        text-align: center;
+        >img {
+            display: inline-block;
+        }
+    }
+}
+
+#recommend {
+    .fund-intro {
+        width: 100%;
+        display: block;
+        margin: 5% auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    .f-title {
+        background: $primary-color-bl;
+        color: #ffffff;
+        font-size: 1.875em;
+        line-height: 1.4em;
+        padding: 0 3%;
+    }
+    .f-content {
+        padding: 4% 3% 3% 3%;
+        color: #959595;
+    }
+    .f-reason {
+        width: 58%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .f-apply {
+        width: 38%;
+        padding-left: 3%;
+        display: inline-block;
+        vertical-align: top;
+        >.f-tnc {
+            line-height: 1.66em;
+        }
+    }
+    .rs-txt {
+        font-size: 1.125em;
+        margin-bottom: 1em;
+        >span {
+            color: $primary-color-bl;
+            font-weight: bold;
+        }
+    }
+    .rs-table {
+        width: 94%;
+        margin: 1% 0;
+        display: table;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -1px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    .rs-tr {
+        display: table-row
+    }
+    .rs-tr {
+        &:nth-child(odd) {
+            background: #f5f5f5;
+        }
+        >:first-child {
+            width: 24%;
+        }
+    }
+    .rs-th,
+    .rs-td {
+        display: table-cell;
+        padding: 8px 5px;
+        text-align: center;
+        width: 19%;
+    }
+    .rs-th {
+        background: $primary-color-bl;
+        color: #ffffff;
+    }
+    .f-btn {
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        >a {
+            display: block;
+            padding: 0.5em 0.8em;
+            font-size: 1.8em;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+    }
+    .btn-applynow {
+        background: #d40000;
+        margin-right: 5%;
+    }
+    .btn-free {
+        background: #ff9600;
+    }
+    .f-tnc {
+        font-size: 0.9em;
+        line-height: 1.4em;
+        font-weight: lighter;
+        color: #535353;
+    }
+    .f-tncinfo {
+        padding-left: 24px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 14px;
+            height: 14px;
+            background: url(../images/tnc-info.svg) center no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 2px;
+            left: 0;
+        }
+    }
+    .divide {
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px dotted #cccccc;
+        padding-top: 2%;
+        margin-bottom: 2%;
+    }
+}

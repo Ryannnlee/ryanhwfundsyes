@@ -1,61 +1,36 @@
 /* Header ----------------------- */
 
 @import "transform";
-$light-color: #16d3d3;
-$primary-color: #051468;
+$primary-color-b: #86754d;
+$primary-color-g: #c3d600;
+$primary-color-bl: #1764a1;
 header {
     position: fixed;
     width: 100%;
-    background: #e1e1e1;
+    background: #ffffff;
     z-index: 99;
     top: 0;
-    box-shadow: 0px 5px 10px rgba(88, 88, 88, 0.3);
-    color: $primary-color;
-    @include transition(all 0.3s ease);
-}
-
-.fp-viewing-firstPage {
-    header {
-        background: rgba(256, 256, 256, 0.4);
-        box-shadow: none;
-        color: #ffffff;
-    }
-    .nav-right {
-        li {
-            a {
-                color: #ffffff;
-            }
-            @media (min-width: 768px) {
-                border-right: 1px solid #ffffff;
-            }
-        }
-    }
-    .scrolltop {
-        opacity: 0;
-    }
+    box-shadow: 0px 5px 10px rgba(88, 88, 88, 0.1);
+    color: $primary-color-b;
+    // @include transition(all 0.3s ease);
 }
 
 #logo {
     width: 36%;
-    max-width: 300px;
+    max-width: 220px;
     display: block;
-    padding: 15px 20px;
+    padding: 20px 0 15px 0;
     >img {
         width: 100%;
+        max-width: 200px;
     }
 }
 
 .overlay {
     height: 100%;
-    &:before {
-        content: '';
-        height: 100%;
-        display: inline-block;
-        vertical-align: middle;
-    }
     .overlay-nav {
-        display: inline-block;
-        vertical-align: middle;
+        position: relative;
+        top: 50%;
     }
 }
 
@@ -65,39 +40,31 @@ header {
     right: 0;
     z-index: 98;
     height: 100%;
+    text-align: right;
     @include transition(all .5s);
     ul {
         width: 100%;
         display: inline-block;
-        font-size: 14px;
-        text-align: right;
         vertical-align: middle;
+        font-size: 0;
     }
     li {
-        font-size: 1.15em;
+        display: inline-block;
+        font-size: 18px;
         padding: 0 15px;
         text-align: center;
-        letter-spacing: 1.4px;
-        font-weight: 400;
-        &:last-of-type {
-            border-right: none;
+        &:nth-child(1) {
+            padding-left: 0;
+        }
+        &:nth-child(3) {
+            padding-right: 30px;
         }
         a {
-            color: $primary-color;
+            color: $primary-color-b;
             @include transition(all .25s ease);
             &:hover {
-                color: $light-color;
+                color: $primary-color-g;
             }
-        }
-        @media (min-width: 768px) {
-            font-size: 1.2em;
-            padding: 0 10px;
-            display: inline-block;
-            border-right: 1px solid $primary-color;
-        }
-        @media (min-width: 992px) {
-            font-size: 1.5em;
-            padding: 0 25px;
         }
     }
 }
