@@ -1,9 +1,71 @@
 /* Footer ----------------------- */
 
+$primary-color-b: #86754d;
+$primary-color-g: #c3d600;
+$primary-color-bl: #1764a1;
 footer {
     width: 100%;
+    position: relative;
+    padding-top: 3%;
+    margin-top: 2%;
+    &::before {
+        content: '';
+        width: 100%;
+        padding-bottom: 4%;
+        background: url(../images/footer-topbg.png) center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+    }
     .footerBar {
-        background-color: #b5b5b5;
-        padding: 15px 0;
+        background-color: #e3e3e3;
+        padding: 20px 0;
+        p {
+            text-align: center;
+            font-size: 0.85em;
+            line-height: 2em;
+            font-weight: lighter;
+            color: #7c7373;
+        }
+    }
+}
+
+.footer-icon {
+    width: 100%;
+    display: block;
+    position: relative;
+    ul {
+        text-align: center;
+        margin: 2% 0;
+        >li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            background: $primary-color-g;
+            border-radius: 50%;
+            line-height: 50px;
+            overflow: hidden;
+            a {
+                display: block;
+                color: #ffffff;
+                width: 100%;
+                height: 100%;
+            }
+            &:nth-child(1) {
+                background: url(../images/wbtn_fb.png) center no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(2) {
+                background: url(../images/wbtn_line.png) center no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(3) {
+                background: url(../images/wbtn_mail.png) center no-repeat;
+                background-size: cover;
+            }
+        }
     }
 }

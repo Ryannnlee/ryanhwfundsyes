@@ -78,8 +78,7 @@ header {
 }
 
 .overlay .overlay-nav {
-  position: relative;
-  top: 50%;
+  height: 100%;
 }
 
 .nav-right {
@@ -87,6 +86,7 @@ header {
   top: 0;
   right: 0;
   z-index: 98;
+  width: 70%;
   height: 100%;
   text-align: right;
   transition: all 0.5s;
@@ -101,21 +101,33 @@ header {
   display: inline-block;
   vertical-align: middle;
   font-size: 0;
+  position: relative;
+  top: 60%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
 }
 
 .nav-right li {
   display: inline-block;
   font-size: 18px;
-  padding: 0 15px;
+  margin-right: 8%;
   text-align: center;
+  vertical-align: middle;
+  position: relative;
 }
 
-.nav-right li:nth-child(1) {
-  padding-left: 0;
+.nav-right li:last-child {
+  margin-left: 2%;
+  padding: 0.5em 1.2em;
+  background: #86754d;
+  border-radius: 1em;
 }
 
-.nav-right li:nth-child(3) {
-  padding-right: 30px;
+.nav-right li:last-child a {
+  color: #ffffff;
 }
 
 .nav-right li a {
@@ -129,6 +141,28 @@ header {
 
 .nav-right li a:hover {
   color: #c3d600;
+}
+
+.nav-right li:after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #c3d600;
+  position: absolute;
+  bottom: -107%;
+  left: 50%;
+  right: 50%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.nav-right li.nav-active:after {
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 .button_container {
@@ -238,8 +272,6 @@ header {
   }
   .overlay .overlay-nav {
     position: relative;
-    width: 99%;
-    /*height: 70%;*/
     top: 0;
     font-size: 30px;
     font-weight: 300;
@@ -396,16 +428,83 @@ header {
 /* Footer ----------------------- */
 footer {
   width: 100%;
+  position: relative;
+  padding-top: 3%;
+  margin-top: 2%;
+}
+
+footer::before {
+  content: '';
+  width: 100%;
+  padding-bottom: 4%;
+  background: url(../images/footer-topbg.png) center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
 }
 
 footer .footerBar {
-  background-color: #b5b5b5;
-  padding: 15px 0;
+  background-color: #e3e3e3;
+  padding: 20px 0;
+}
+
+footer .footerBar p {
+  text-align: center;
+  font-size: 0.85em;
+  line-height: 2em;
+  font-weight: lighter;
+  color: #7c7373;
+}
+
+.footer-icon {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.footer-icon ul {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.footer-icon ul > li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background: #c3d600;
+  border-radius: 50%;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.footer-icon ul > li a {
+  display: block;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-icon ul > li:nth-child(1) {
+  background: url(../images/wbtn_fb.png) center no-repeat;
+  background-size: cover;
+}
+
+.footer-icon ul > li:nth-child(2) {
+  background: url(../images/wbtn_line.png) center no-repeat;
+  background-size: cover;
+}
+
+.footer-icon ul > li:nth-child(3) {
+  background: url(../images/wbtn_mail.png) center no-repeat;
+  background-size: cover;
 }
 
 body {
   font-family: "微軟正黑體", "Microsoft JhengHei", "Arial", Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 html,

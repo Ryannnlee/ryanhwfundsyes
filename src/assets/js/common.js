@@ -1,24 +1,20 @@
 $(function() {
 
-    // var wh = $(window).height();
-    // var offset = wh / 5;
 
 
-    // $(window).scroll(function() {
-    //     var scrollVal = $(this).scrollTop();
+    var actTncOff = $('.act-tnc').offset().top;
+    console.log(actTncOff)
 
-    //     if ($(body).hasClass('fp-viewing-firstPage')) {
-    //         $('header').removeClass('header-scroll');
-    //     } else {
-    //         $('header').addClass('header-scroll');
-    //         $('header').removeClass('sm');
-    //         $('header').removeClass('hidden');
-    //     }
-
-    // });
+    $('#overlay ul li').eq(2).on('click', function() {
+        $('body').animate({
+            scrollTop: actTncOff
+        }, 2000, 'easeOutBounce');
+        // return false;
+    });
 
     $('#nav-toggle').click(function() {
         $(this).toggleClass('active');
         $('#overlay').toggleClass('open');
     });
+
 })

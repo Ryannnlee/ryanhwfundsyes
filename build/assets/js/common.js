@@ -2,22 +2,15 @@
 
 $(function () {
 
-    // var wh = $(window).height();
-    // var offset = wh / 5;
+    var actTncOff = $('.act-tnc').offset().top;
+    console.log(actTncOff);
 
-
-    // $(window).scroll(function() {
-    //     var scrollVal = $(this).scrollTop();
-
-    //     if ($(body).hasClass('fp-viewing-firstPage')) {
-    //         $('header').removeClass('header-scroll');
-    //     } else {
-    //         $('header').addClass('header-scroll');
-    //         $('header').removeClass('sm');
-    //         $('header').removeClass('hidden');
-    //     }
-
-    // });
+    $('#overlay ul li').eq(2).on('click', function () {
+        $('body').animate({
+            scrollTop: actTncOff
+        }, 2000, 'easeOutBounce');
+        // return false;
+    });
 
     $('#nav-toggle').click(function () {
         $(this).toggleClass('active');
