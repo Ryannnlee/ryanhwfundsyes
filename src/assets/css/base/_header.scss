@@ -77,7 +77,7 @@ header {
         &:after {
             content: '';
             width: 0;
-            height: 3px;
+            height: 4px;
             background: #c3d600;
             position: absolute;
             bottom: -107%;
@@ -86,9 +86,9 @@ header {
             @include transition(all 0.3s ease);
         }
         &.nav-active:after {
-            width: 100%;
-            left: 0;
-            right: 0;
+            width: 120%;
+            left: -10%;
+            right: -10%;
         }
     }
 }

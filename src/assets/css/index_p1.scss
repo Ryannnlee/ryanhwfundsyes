@@ -132,12 +132,14 @@ $primary-color-bl: #1764a1;
     }
     .rs-th,
     .rs-td {
+        font-weight: 500;
         display: table-cell;
         padding: 8px 5px;
         text-align: center;
         width: 19%;
     }
     .rs-th {
+        font-weight: bold;
         background: $primary-color-bl;
         color: #ffffff;
     }
@@ -151,6 +153,7 @@ $primary-color-bl: #1764a1;
             font-size: 1.8em;
             letter-spacing: 1px;
             color: #ffffff;
+            font-weight: bold;
         }
     }
     .btn-applynow {
@@ -214,7 +217,8 @@ $primary-color-bl: #1764a1;
                 left: 0;
                 font-size: 0.75em;
                 line-height: 1.8em;
-                color: $primary-color-g;
+                color: #abbb00;
+                font-weight: 900;
                 text-align: center;
             }
             &:nth-child(1)::before {
@@ -263,18 +267,21 @@ $primary-color-bl: #1764a1;
         display: table;
         margin: 4% auto;
         color: #959595;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -2px 0px 5px rgba(0, 0, 0, 0.2);
     }
     .l-tr {
         display: table-row;
     }
     .l-th,
     .l-td {
+        font-weight: 500;
         display: table-cell;
         padding: 10px 5px;
         text-align: center;
         font-size: 1.25em;
     }
     .l-th {
+        font-weight: bold;
         background: $primary-color-g;
         color: #ffffff;
     }
@@ -282,6 +289,7 @@ $primary-color-bl: #1764a1;
         background: #f5f5f5;
     }
     .l-td>span {
+        font-weight: 900;
         font-size: 1.5em;
         color: #cd0000;
     }
@@ -313,6 +321,18 @@ $primary-color-bl: #1764a1;
             &.red {
                 color: #db0000;
             }
+        }
+    }
+}
+
+.free999 {
+    #pin1 {
+        a {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: -125px;
+            ;
         }
     }
 }

@@ -69,9 +69,9 @@ gulp.task('clean-js', function() {
         .pipe(clean());
 });
 gulp.task('concat-js', function() {
-    return gulp.src(['src/assets/js/plugins/slick.min.js'])
+    return gulp.src(['src/assets/js/plugins/*.js'])
         // .pipe(concat('lib.js'))
-        .pipe(gulp.dest('build/assets/js/'));
+        .pipe(gulp.dest('build/assets/js/plugins/'));
 });
 
 gulp.task('js', ['clean-js', 'concat-js'], function() {

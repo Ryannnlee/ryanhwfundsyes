@@ -156,6 +156,7 @@
 
 #recommend .rs-th,
 #recommend .rs-td {
+  font-weight: 500;
   display: table-cell;
   padding: 8px 5px;
   text-align: center;
@@ -163,6 +164,7 @@
 }
 
 #recommend .rs-th {
+  font-weight: bold;
   background: #1764a1;
   color: #ffffff;
 }
@@ -179,6 +181,7 @@
   font-size: 1.8em;
   letter-spacing: 1px;
   color: #ffffff;
+  font-weight: bold;
 }
 
 #recommend .btn-applynow {
@@ -249,7 +252,8 @@
   left: 0;
   font-size: 0.75em;
   line-height: 1.8em;
-  color: #c3d600;
+  color: #abbb00;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -306,6 +310,8 @@
   display: table;
   margin: 4% auto;
   color: #959595;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -2px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 #activity-method .l-tr {
@@ -314,6 +320,7 @@
 
 #activity-method .l-th,
 #activity-method .l-td {
+  font-weight: 500;
   display: table-cell;
   padding: 10px 5px;
   text-align: center;
@@ -321,6 +328,7 @@
 }
 
 #activity-method .l-th {
+  font-weight: bold;
   background: #c3d600;
   color: #ffffff;
 }
@@ -330,6 +338,7 @@
 }
 
 #activity-method .l-td > span {
+  font-weight: 900;
   font-size: 1.5em;
   color: #cd0000;
 }
@@ -367,4 +376,11 @@
 
 #activity-method .act-tnc > li.red {
   color: #db0000;
+}
+
+.free999 #pin1 a {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: -125px;
 }

@@ -13,8 +13,6 @@
     <meta property="og:title" content="FoundsYes" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="assets/css/slick.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/slick-theme.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
 
 
@@ -23,7 +21,8 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js'></script>
-    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
 
 
@@ -44,9 +43,9 @@
             <nav class="overlay" id="overlay">
                 <div class="overlay-nav">
                     <ul>
-                        <li class="nav-active"><a href="#">摩根與智者</a></li>
-                        <li class=""><a href="#">智者推薦</a></li>
-                        <li class=""><a href="#">智者在鉅亨</a></li>
+                        <li class="nav-active"><a href="javascript:;">摩根與智者</a></li>
+                        <li class=""><a href="javascript:;">智者推薦</a></li>
+                        <li class=""><a href="javascript:;">智者在鉅亨</a></li>
                         <li><a href="#">立即開戶</a></li>
                     </ul>
                 </div>
@@ -55,220 +54,222 @@
     </div>
 </header>
 
-<!-- <div class="lock_wrp" id="lock">
-    <div class="lock">
-        <i></i><br> 為提供您更好的體驗效果，請將您的裝置轉向直式瀏覽。
-    </div>
-</div> -->
-
 
 <section class="kv" id="kv">
     <div class="btn-allfree"><a href="#">免費開戶</a></div>
 </section>
 
-<section class="section" id="recommend">
-    <div class="container">
-        <h1><img src="assets/images/recofund-title.png" alt=""></h1>
-        <!-- fund 1 -->
-        <div class="fund-intro">
-            <div class="f-title">安聯收益成長基金-AT累積類股(美元)</div>
-            <div class="f-content">
-                <div class="f-reason">
-                    <div class="rs-txt"><span>推薦理由：</span>美國為世界經濟火車頭，股市長期趨勢向上。</div>
-                    <div class="rs-table">
-                        <div class="rs-tr">
-                            <div class="rs-th">績效表現(%)</div>
-                            <div class="rs-th">一年</div>
-                            <div class="rs-th">二年</div>
-                            <div class="rs-th">三年</div>
-                            <div class="rs-th">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-apply">
-                    <div class="f-btn btn-applynow"><a href="#">立即申購</a></div>
-                    <div class="f-btn btn-free"><a href="#">免費開戶</a></div>
-                    <div class="f-tnc">定期定額計算方式：<br>1.假設每期投入 新台幣10,000元，扣款日為每月月底；<br>2.投資人因不同時間進場，將有不同之投資績效，過去績效亦不代表未來收益之保證。</div>
-                </div>
-                <div class="divide"></div>
-                <div class="f-tnc f-tncinfo">資料提供：晨星 2017/09/30，類別為美國大型增長型股票，同類平均、排名均係統一以美元計算績效，計算基礎：總回報、資產淨值對資產淨值、已扣除年費、總收益再投資。該等數據並未計入首次認購費；倘已支付首次認購費，表現將較所示遜色。</div>
-            </div>
-        </div>
-        <!-- fund 2 -->
-        <div class="fund-intro">
-            <div class="f-title">安聯收益成長基金-AT累積類股(美元)</div>
-            <div class="f-content">
-                <div class="f-reason">
-                    <div class="rs-txt"><span>推薦理由：</span>美國為世界經濟火車頭，股市長期趨勢向上。</div>
-                    <div class="rs-table">
-                        <div class="rs-tr">
-                            <div class="rs-th">績效表現(%)</div>
-                            <div class="rs-th">一年</div>
-                            <div class="rs-th">二年</div>
-                            <div class="rs-th">三年</div>
-                            <div class="rs-th">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-apply">
-                    <div class="f-btn btn-applynow"><a href="#">立即申購</a></div>
-                    <div class="f-btn btn-free"><a href="#">免費開戶</a></div>
-                    <div class="f-tnc">定期定額計算方式：<br>1.假設每期投入 新台幣10,000元，扣款日為每月月底；<br>2.投資人因不同時間進場，將有不同之投資績效，過去績效亦不代表未來收益之保證。</div>
-                </div>
-                <div class="divide"></div>
-                <div class="f-tnc f-tncinfo">資料提供：晨星 2017/09/30，類別為美國大型增長型股票，同類平均、排名均係統一以美元計算績效，計算基礎：總回報、資產淨值對資產淨值、已扣除年費、總收益再投資。該等數據並未計入首次認購費；倘已支付首次認購費，表現將較所示遜色。</div>
-            </div>
-        </div>
-        <!-- fund 3 -->
-        <div class="fund-intro">
-            <div class="f-title">安聯收益成長基金-AT累積類股(美元)</div>
-            <div class="f-content">
-                <div class="f-reason">
-                    <div class="rs-txt"><span>推薦理由：</span>美國為世界經濟火車頭，股市長期趨勢向上。</div>
-                    <div class="rs-table">
-                        <div class="rs-tr">
-                            <div class="rs-th">績效表現(%)</div>
-                            <div class="rs-th">一年</div>
-                            <div class="rs-th">二年</div>
-                            <div class="rs-th">三年</div>
-                            <div class="rs-th">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                        <div class="rs-tr">
-                            <div class="rs-td">績效表現(%)</div>
-                            <div class="rs-td">一年</div>
-                            <div class="rs-td">二年</div>
-                            <div class="rs-td">三年</div>
-                            <div class="rs-td">五年</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-apply">
-                    <div class="f-btn btn-applynow"><a href="#">立即申購</a></div>
-                    <div class="f-btn btn-free"><a href="#">免費開戶</a></div>
-                    <div class="f-tnc">定期定額計算方式：<br>1.假設每期投入 新台幣10,000元，扣款日為每月月底；<br>2.投資人因不同時間進場，將有不同之投資績效，過去績效亦不代表未來收益之保證。</div>
-                </div>
-                <div class="divide"></div>
-                <div class="f-tnc f-tncinfo">資料提供：晨星 2017/09/30，類別為美國大型增長型股票，同類平均、排名均係統一以美元計算績效，計算基礎：總回報、資產淨值對資產淨值、已扣除年費、總收益再投資。該等數據並未計入首次認購費；倘已支付首次認購費，表現將較所示遜色。</div>
-            </div>
+<div class="wrapper">
+    <div class="container free999">
+        <div id="trigger1"></div>
+        <div id="pin1">
+            <a href="javascript:;"><img src="assets/images/999free.png" alt=""></a>
         </div>
     </div>
-</section>
-<section class="section" id="activity-method">
-    <div class="container">
-        <h1><img src="assets/images/activity-method.png" alt=""></h1>
-        <ul class="act-item">
-            <li>活動期間：2018/07/25 ~ 2018/09/30。</li>
-            <li>活動期間內，使用天天選月月扣方式起扣三大系列基金皆享0.3%手續費優惠，最低扣款金額下降到新台幣999元(其它幣別最低申購門檻請看下表)，成功扣款滿3次再送6次扣款0手續費優惠(第10次扣款恢復0.3%手續費)。<br>例：</li>
-            <li>此活動僅限三大品牌全系列基金：<span>安聯、貝萊德、摩根</span>。</li>
-            <li>本活動之優惠內容、活動期間或其他使用規定如有異動，本網將另行公告。</li>
-            <li>鉅亨網投顧保有調整或終止本方案之權利。</li>
-        </ul>
-        <div class="low-apply">
-            <div class="l-title">
-                <h2>最低申購門檻</h2>
-            </div>
-            <div class="l-table">
-                <div class="l-tr">
-                    <div class="l-th">基金公司</div>
-                    <div class="l-th">新台幣</div>
-                    <div class="l-th">美元/歐元/澳幣/英鎊/加幣</div>
-                    <div class="l-th">南非幣</div>
-                    <div class="l-th">日圓</div>
+    <section class="section" id="recommend">
+        <div class="container">
+            <h1><img src="assets/images/recofund-title.png" alt=""></h1>
+            <!-- fund 1 -->
+            <div class="fund-intro">
+                <div class="f-title">安聯收益成長基金-AT累積類股(美元)</div>
+                <div class="f-content">
+                    <div class="f-reason">
+                        <div class="rs-txt"><span>推薦理由：</span>美國為世界經濟火車頭，股市長期趨勢向上。</div>
+                        <div class="rs-table">
+                            <div class="rs-tr">
+                                <div class="rs-th">績效表現(%)</div>
+                                <div class="rs-th">一年</div>
+                                <div class="rs-th">二年</div>
+                                <div class="rs-th">三年</div>
+                                <div class="rs-th">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-apply">
+                        <div class="f-btn btn-applynow"><a href="#">立即申購</a></div>
+                        <div class="f-btn btn-free"><a href="#">免費開戶</a></div>
+                        <div class="f-tnc">定期定額計算方式：<br>1.假設每期投入 新台幣10,000元，扣款日為每月月底；<br>2.投資人因不同時間進場，將有不同之投資績效，過去績效亦不代表未來收益之保證。</div>
+                    </div>
+                    <div class="divide"></div>
+                    <div class="f-tnc f-tncinfo">資料提供：晨星 2017/09/30，類別為美國大型增長型股票，同類平均、排名均係統一以美元計算績效，計算基礎：總回報、資產淨值對資產淨值、已扣除年費、總收益再投資。該等數據並未計入首次認購費；倘已支付首次認購費，表現將較所示遜色。</div>
                 </div>
-                <div class="l-tr">
-                    <div class="l-td">貝萊德全系列/ 安聯全系列 / 摩根全系列</div>
-                    <div class="l-td"><span>999</span></div>
-                    <div class="l-td">50</div>
-                    <div class="l-td">600</div>
-                    <div class="l-td">6,000</div>
+            </div>
+            <!-- fund 2 -->
+            <div class="fund-intro">
+                <div class="f-title">安聯收益成長基金-AT累積類股(美元)</div>
+                <div class="f-content">
+                    <div class="f-reason">
+                        <div class="rs-txt"><span>推薦理由：</span>美國為世界經濟火車頭，股市長期趨勢向上。</div>
+                        <div class="rs-table">
+                            <div class="rs-tr">
+                                <div class="rs-th">績效表現(%)</div>
+                                <div class="rs-th">一年</div>
+                                <div class="rs-th">二年</div>
+                                <div class="rs-th">三年</div>
+                                <div class="rs-th">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-apply">
+                        <div class="f-btn btn-applynow"><a href="#">立即申購</a></div>
+                        <div class="f-btn btn-free"><a href="#">免費開戶</a></div>
+                        <div class="f-tnc">定期定額計算方式：<br>1.假設每期投入 新台幣10,000元，扣款日為每月月底；<br>2.投資人因不同時間進場，將有不同之投資績效，過去績效亦不代表未來收益之保證。</div>
+                    </div>
+                    <div class="divide"></div>
+                    <div class="f-tnc f-tncinfo">資料提供：晨星 2017/09/30，類別為美國大型增長型股票，同類平均、排名均係統一以美元計算績效，計算基礎：總回報、資產淨值對資產淨值、已扣除年費、總收益再投資。該等數據並未計入首次認購費；倘已支付首次認購費，表現將較所示遜色。</div>
                 </div>
             </div>
-            <div class="btn-allfree"><a href="#">免費開戶</a></div>
-            <div class="divide-line"></div>
+            <!-- fund 3 -->
+            <div class="fund-intro">
+                <div class="f-title">安聯收益成長基金-AT累積類股(美元)</div>
+                <div class="f-content">
+                    <div class="f-reason">
+                        <div class="rs-txt"><span>推薦理由：</span>美國為世界經濟火車頭，股市長期趨勢向上。</div>
+                        <div class="rs-table">
+                            <div class="rs-tr">
+                                <div class="rs-th">績效表現(%)</div>
+                                <div class="rs-th">一年</div>
+                                <div class="rs-th">二年</div>
+                                <div class="rs-th">三年</div>
+                                <div class="rs-th">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                            <div class="rs-tr">
+                                <div class="rs-td">績效表現(%)</div>
+                                <div class="rs-td">一年</div>
+                                <div class="rs-td">二年</div>
+                                <div class="rs-td">三年</div>
+                                <div class="rs-td">五年</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-apply">
+                        <div class="f-btn btn-applynow"><a href="#">立即申購</a></div>
+                        <div class="f-btn btn-free"><a href="#">免費開戶</a></div>
+                        <div class="f-tnc">定期定額計算方式：<br>1.假設每期投入 新台幣10,000元，扣款日為每月月底；<br>2.投資人因不同時間進場，將有不同之投資績效，過去績效亦不代表未來收益之保證。</div>
+                    </div>
+                    <div class="divide"></div>
+                    <div class="f-tnc f-tncinfo">資料提供：晨星 2017/09/30，類別為美國大型增長型股票，同類平均、排名均係統一以美元計算績效，計算基礎：總回報、資產淨值對資產淨值、已扣除年費、總收益再投資。該等數據並未計入首次認購費；倘已支付首次認購費，表現將較所示遜色。</div>
+                </div>
+            </div>
         </div>
-        <ul class="act-tnc">
-            <li>本資料僅供參考，鉅亨網投顧已盡力就可靠之資料來源提供正確之意見與消息，但無法保證該等資料之完整性。內容涉及新興市場部分，因其波動性與風險程度可能較高，且其政治與經濟情勢穩定度可能低於已開發國家，也可能使資產價值受不同程度之影響，匯率走勢亦可能影響所投資之海外資產價值變動。投資人應依其本身之判斷投資，若有損益或因使用本資料所生之直接或間接損失，應由投資人自行負責，本公司無須負擔任何責任。</li>
-            <li>本文提及之經濟走勢預測不必然代表基金之績效，基金投資風險請詳閱基金公開說明書及投資人須知。<br>基金經金管會核准或同意生效，惟不表示絕無風險，基金經理公司以往之經理績效不保證基金最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書及投資人須知。</li>
-            <li>各銷售機構備有基金公開說明書及投資人須知，歡迎索取。有關基金應負擔之費用（境外基金含分銷費用），已揭露於基金之公開說明書或投資人須知中，投資人可至公開資訊觀測站或境外基金資訊觀測站中查詢。</li>
-            <li class="red">投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重。基金經金管會核准或同意生效，惟不表示絕無風險。由於高收益債券之信用評等未達投資等級或未經信用評等，且對利率變動的敏感度甚高，故基金可能會因利率上升、市場流動性下降，或債券發行機構違約不支付本金、利息或破產而蒙受虧損。投資人應審慎評估，該等基金不適合無法承擔相關風險之投資人。基金經理公司以往之經理績效不保證基金最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書及投資人須知。</li>
-            <li>投資於Rule 144A債券，境內高收益債券基金最高可投資基金總資產30%;境內以投資新興市場國家為主之債券型基金及平衡型基金最高可投資基金總資產15%;境外高收益債券基金可能有部分投資於美國Rule 144A債券，該債券屬私募性質，較可能發生流動性不足，財務訊息揭露不完整或因價格不透明導致波動性較大之風險。</li>
-            <li>不動產證券化型基金得投資於高收益債券，其投資總金額不得超過基金淨資產價值之30％。</li>
-            <li>投資人因不同時間進場，將有不同之投資績效，過去之績效亦不代表未來績效之保證。</li>
-            <li>基金配息率不代表基金報酬率，且過去配息率不代表未來配息率；基金淨值可能因市場因素而上下波動。</li>
-            <li>基金配息前未先扣除應負擔之相關費用。基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。</li>
-            <li>境外基金投資大陸地區證券市場以掛牌上市有價證券為限，基金投資總金額不得超過該基金淨資產價值10%(各基金實際可投資大陸地區之限額應視個別基金信託契約之規範)；境內基金則依各基金實際可投資大陸地區之限額，應視個別基金信託契約之規範。</li>
-        </ul>
-    </div>
-</section>
+    </section>
+    <section class="section" id="activity-method">
+        <div class="container">
+            <h1><img src="assets/images/activity-method.png" alt=""></h1>
+            <ul class="act-item">
+                <li>活動期間：2018/07/25 ~ 2018/09/30。</li>
+                <li>活動期間內，使用天天選月月扣方式起扣三大系列基金皆享0.3%手續費優惠，最低扣款金額下降到新台幣999元(其它幣別最低申購門檻請看下表)，成功扣款滿3次再送6次扣款0手續費優惠(第10次扣款恢復0.3%手續費)。<br>例：</li>
+                <li>此活動僅限三大品牌全系列基金：<span>安聯、貝萊德、摩根</span>。</li>
+                <li>本活動之優惠內容、活動期間或其他使用規定如有異動，本網將另行公告。</li>
+                <li>鉅亨網投顧保有調整或終止本方案之權利。</li>
+            </ul>
+            <div class="low-apply">
+                <div class="l-title">
+                    <h2>最低申購門檻</h2>
+                </div>
+                <div class="l-table">
+                    <div class="l-tr">
+                        <div class="l-th">基金公司</div>
+                        <div class="l-th">新台幣</div>
+                        <div class="l-th">美元/歐元/澳幣/英鎊/加幣</div>
+                        <div class="l-th">南非幣</div>
+                        <div class="l-th">日圓</div>
+                    </div>
+                    <div class="l-tr">
+                        <div class="l-td">貝萊德全系列/ 安聯全系列 / 摩根全系列</div>
+                        <div class="l-td"><span>999</span></div>
+                        <div class="l-td">50</div>
+                        <div class="l-td">600</div>
+                        <div class="l-td">6,000</div>
+                    </div>
+                </div>
+                <div class="btn-allfree"><a href="#">免費開戶</a></div>
+                <div class="divide-line"></div>
+            </div>
+            <ul class="act-tnc">
+                <li>本資料僅供參考，鉅亨網投顧已盡力就可靠之資料來源提供正確之意見與消息，但無法保證該等資料之完整性。內容涉及新興市場部分，因其波動性與風險程度可能較高，且其政治與經濟情勢穩定度可能低於已開發國家，也可能使資產價值受不同程度之影響，匯率走勢亦可能影響所投資之海外資產價值變動。投資人應依其本身之判斷投資，若有損益或因使用本資料所生之直接或間接損失，應由投資人自行負責，本公司無須負擔任何責任。</li>
+                <li>本文提及之經濟走勢預測不必然代表基金之績效，基金投資風險請詳閱基金公開說明書及投資人須知。<br>基金經金管會核准或同意生效，惟不表示絕無風險，基金經理公司以往之經理績效不保證基金最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書及投資人須知。</li>
+                <li>各銷售機構備有基金公開說明書及投資人須知，歡迎索取。有關基金應負擔之費用（境外基金含分銷費用），已揭露於基金之公開說明書或投資人須知中，投資人可至公開資訊觀測站或境外基金資訊觀測站中查詢。</li>
+                <li class="red">投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重。基金經金管會核准或同意生效，惟不表示絕無風險。由於高收益債券之信用評等未達投資等級或未經信用評等，且對利率變動的敏感度甚高，故基金可能會因利率上升、市場流動性下降，或債券發行機構違約不支付本金、利息或破產而蒙受虧損。投資人應審慎評估，該等基金不適合無法承擔相關風險之投資人。基金經理公司以往之經理績效不保證基金最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書及投資人須知。</li>
+                <li>投資於Rule 144A債券，境內高收益債券基金最高可投資基金總資產30%;境內以投資新興市場國家為主之債券型基金及平衡型基金最高可投資基金總資產15%;境外高收益債券基金可能有部分投資於美國Rule 144A債券，該債券屬私募性質，較可能發生流動性不足，財務訊息揭露不完整或因價格不透明導致波動性較大之風險。</li>
+                <li>不動產證券化型基金得投資於高收益債券，其投資總金額不得超過基金淨資產價值之30％。</li>
+                <li>投資人因不同時間進場，將有不同之投資績效，過去之績效亦不代表未來績效之保證。</li>
+                <li>基金配息率不代表基金報酬率，且過去配息率不代表未來配息率；基金淨值可能因市場因素而上下波動。</li>
+                <li>基金配息前未先扣除應負擔之相關費用。基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。</li>
+                <li>境外基金投資大陸地區證券市場以掛牌上市有價證券為限，基金投資總金額不得超過該基金淨資產價值10%(各基金實際可投資大陸地區之限額應視個別基金信託契約之規範)；境內基金則依各基金實際可投資大陸地區之限額，應視個別基金信託契約之規範。</li>
+            </ul>
+        </div>
+    </section>
+</div>
 
 
 
 <div class="footer-icon">
     <ul>
         <li>
-            <a class="f-icon" id="facebook" href="https://www.facebook.com/share.php?u=http://bit.ly/2KZhFon"></a>
+            <a class="f-icon" id="facebook" href="https://www.facebook.com/share.php?u=http://bit.ly/2KZhFon" target="_blank"></a>
         </li>
         <li>
-            <a class="f-icon" id="line" href="http://line.me/R/msg/text/?摩根來臨，鉅亨來０！7/31 前單筆申購摩根基金０手續費，難怪智者都在鉅亨買基金！馬上了解 http://bit.ly/2wJUYl4"></a>
+            <a class="f-icon" id="line" href="http://line.me/R/msg/text/?摩根來臨，鉅亨來０！7/31 前單筆申購摩根基金０手續費，難怪智者都在鉅亨買基金！馬上了解 http://bit.ly/2wJUYl4" target="_blank"></a>
         </li>
         <li>
-            <a class="f-icon" id="email" href="mailto:?subject=與你分享摩根基金在鉅亨上架囉！０手續費超優惠！&amp;body=好消息！%0D%0A在鉅亨可以買到摩根基金，而且7/31前單筆申購跟天天選月月扣都是０手續費！不限筆數、不限金額！%0D%0A快來了解： http://bit.ly/2rFXX8S"></a>
+            <a class="f-icon" id="email" href="mailto:?subject=與你分享摩根基金在鉅亨上架囉！０手續費超優惠！&amp;body=好消息！%0D%0A在鉅亨可以買到摩根基金，而且7/31前單筆申購跟天天選月月扣都是０手續費！不限筆數、不限金額！%0D%0A快來了解： http://bit.ly/2rFXX8S" target="_blank"></a>
         </li>
         <li>
             <a class="f-icon" id="gotop" href="javascript:;">TOP</a>

@@ -1,5 +1,6 @@
 /* Footer ----------------------- */
 
+@import "transform";
 $primary-color-b: #86754d;
 $primary-color-g: #c3d600;
 $primary-color-bl: #1764a1;
@@ -32,16 +33,19 @@ footer {
 }
 
 .footer-icon {
-    width: 100%;
-    display: block;
-    position: relative;
+    position: fixed;
+    bottom: -50px;
+    left: 50%;
+    opacity: 0;
+    @include transition(all 0.3s);
+    @include transform(translate(-50%, 0));
     ul {
         text-align: center;
-        margin: 2% 0;
+        margin: 1% 0;
         >li {
             display: inline-block;
             vertical-align: middle;
-            margin: 10px;
+            margin: 5px;
             width: 50px;
             height: 50px;
             background: $primary-color-g;
@@ -68,4 +72,16 @@ footer {
             }
         }
     }
+}
+
+.footer-icon-open {
+    bottom: 0;
+    opacity: 1;
+}
+
+.footer-nofix {
+    position: relative;
+    bottom: auto;
+    opacity: 1;
+    margin: 2% 0;
 }
