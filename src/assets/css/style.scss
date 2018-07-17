@@ -7,16 +7,13 @@ $primary-color: #051468;
 body {
     font-family: "微軟正黑體", "Microsoft JhengHei", "Arial", Helvetica, sans-serif;
     font-weight: lighter;
+    font-size: 16px;
 }
 
 html,
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-body {
-    font-size: 16px;
 }
 
 a {
@@ -42,7 +39,7 @@ img {
 }
 
 .container {
-    width: 100%;
+    width: 80%;
     max-width: 1140px;
     display: block;
     margin: 0 auto;
@@ -99,6 +96,9 @@ img {
     .hidden-phone {
         display: block !important;
     }
+    .section {
+        margin-top: 10%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -122,5 +122,8 @@ img {
     }
     .hidden-phone {
         display: none !important;
+    }
+    .container {
+        width: 96%;
     }
 }

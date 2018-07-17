@@ -61,6 +61,13 @@ header {
   color: #86754d;
 }
 
+header .container {
+  width: 100% !important;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #logo {
   width: 36%;
   max-width: 220px;
@@ -121,6 +128,7 @@ header {
 
 .nav-right li:last-child {
   margin-left: 2%;
+  margin-right: 5px;
   padding: 0.5em 1.2em;
   background: #86754d;
   border-radius: 1em;
@@ -186,7 +194,7 @@ header {
 }
 
 .button_container span {
-  background: #FFF;
+  background: #86754d;
   border: none;
   height: 2px;
   width: 100%;
@@ -206,17 +214,11 @@ header {
   cursor: pointer;
 }
 
-.button_container span:nth-child(1) {
-  width: 80%;
-}
-
 .button_container span:nth-child(2) {
-  width: 100%;
   top: 50%;
 }
 
 .button_container span:nth-child(3) {
-  width: 80%;
   top: 100%;
 }
 
@@ -278,6 +280,9 @@ header {
     letter-spacing: .1em;
     text-align: center;
   }
+  .overlay ul {
+    top: 50%;
+  }
   .overlay ul li {
     display: block;
     margin-bottom: 1em;
@@ -288,6 +293,15 @@ header {
     -webkit-transition: all .6s;
     -o-transition: all .6s;
     transition: all .6s;
+    margin: 2% 0 !important;
+  }
+  .overlay ul li::after {
+    content: none;
+  }
+  .overlay ul li:last-child {
+    width: auto;
+    display: inline-block;
+    padding: 0.2em 2em;
   }
   .overlay ul li.btn-startint,
   .overlay ul li a {
@@ -444,9 +458,13 @@ footer::before {
   background-color: #fff;
 }
 
+footer .container {
+  text-align: center;
+}
+
 footer .footerBar {
   background-color: #e3e3e3;
-  padding: 20px 0;
+  padding: 20px 0 100px;
 }
 
 footer .footerBar p {
@@ -458,25 +476,23 @@ footer .footerBar p {
 }
 
 .footer-icon {
+  width: 100%;
   position: fixed;
-  bottom: -50px;
-  left: 50%;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
   opacity: 0;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 .footer-icon ul {
   text-align: center;
-  margin: 1% 0;
 }
 
 .footer-icon ul > li {
@@ -489,6 +505,11 @@ footer .footerBar p {
   border-radius: 50%;
   line-height: 50px;
   overflow: hidden;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 .footer-icon ul > li a {
@@ -513,21 +534,25 @@ footer .footerBar p {
   background-size: cover;
 }
 
-.footer-icon-open {
-  bottom: 0;
-  opacity: 1;
+@media screen and (min-width: 1024px) {
+  .footer-icon ul > li:hover {
+    transform: translate(0, -10px);
+    -webkit-transform: translate(0, -10px);
+    -moz-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
+  }
 }
 
-.footer-nofix {
-  position: relative;
-  bottom: auto;
+.footer-icon-open {
+  bottom: 20px;
   opacity: 1;
-  margin: 2% 0;
 }
 
 body {
   font-family: "微軟正黑體", "Microsoft JhengHei", "Arial", Helvetica, sans-serif;
   font-weight: lighter;
+  font-size: 16px;
 }
 
 html,
@@ -535,10 +560,6 @@ html,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  font-size: 16px;
 }
 
 a {
@@ -564,7 +585,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   max-width: 1140px;
   display: block;
   margin: 0 auto;
@@ -620,6 +641,9 @@ img {
   .hidden-phone {
     display: block !important;
   }
+  .section {
+    margin-top: 10%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -643,5 +667,8 @@ img {
   }
   .hidden-phone {
     display: none !important;
+  }
+  .container {
+    width: 96%;
   }
 }

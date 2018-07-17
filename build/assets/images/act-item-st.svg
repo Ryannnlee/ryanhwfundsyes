@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="37" height="33" viewBox="0 0 37 33">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="33" viewBox="0 0 37 33">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
@@ -32,8 +32,14 @@
       .cls-1 {
         fill: #96bd24;
         fill-rule: evenodd;
+        filter: url(#filter);
       }
     </style>
+    <filter id="filter" x="0" y="0" width="37" height="33" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#a5987a"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
   </defs>
-  <path id="形状_11" data-name="形状 11" class="cls-1" d="M33.572,16.5A16.643,16.643,0,0,0,16.787,0,16.643,16.643,0,0,0,0,16.5,16.643,16.643,0,0,0,16.787,33,16.643,16.643,0,0,0,33.572,16.5ZM16.788,30.456A14.08,14.08,0,0,1,2.588,16.5a14.08,14.08,0,0,1,14.2-13.957A14.08,14.08,0,0,1,30.987,16.5,14.079,14.079,0,0,1,16.788,30.456Zm15.8-10.42L37,15.69l-4.422-4.346v8.692Z"/>
+  <path id="形状_11_拷貝_2" data-name="形状 11 拷貝 2" class="cls-1" d="M33.572,16.5A16.643,16.643,0,0,0,16.787,0,16.643,16.643,0,0,0,0,16.5,16.643,16.643,0,0,0,16.787,33,16.643,16.643,0,0,0,33.572,16.5ZM16.788,30.456A14.08,14.08,0,0,1,2.588,16.5a14.08,14.08,0,0,1,14.2-13.957A14.08,14.08,0,0,1,30.987,16.5,14.08,14.08,0,0,1,16.788,30.456Zm15.8-10.42L37,15.69l-4.422-4.346v8.692Z"/>
 </svg>

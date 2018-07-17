@@ -13,6 +13,11 @@ header {
     box-shadow: 0px 5px 10px rgba(88, 88, 88, 0.1);
     color: $primary-color-b;
     // @include transition(all 0.3s ease);
+    .container {
+        width: 100% !important;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
 }
 
 #logo {
@@ -60,6 +65,7 @@ header {
         position: relative;
         &:last-child {
             margin-left: 2%;
+            margin-right: 5px;
             padding: 0.5em 1.2em;
             background: $primary-color-b;
             border-radius: 1em;
@@ -107,7 +113,7 @@ header {
 }
 
 .button_container span {
-    background: #FFF;
+    background: $primary-color-b;
     border: none;
     height: 2px;
     width: 100%;
@@ -119,17 +125,11 @@ header {
     cursor: pointer;
 }
 
-.button_container span:nth-child(1) {
-    width: 80%;
-}
-
 .button_container span:nth-child(2) {
-    width: 100%;
     top: 50%;
 }
 
 .button_container span:nth-child(3) {
-    width: 80%;
     top: 100%;
 }
 
@@ -183,49 +183,58 @@ header {
         letter-spacing: .1em;
         text-align: center;
     }
-    .overlay ul li {
-        display: block;
-        margin-bottom: 1em;
-        position: relative;
-        cursor: pointer;
-        opacity: 0;
-        opacity: 1\9\0;
-        -webkit-transition: all .6s;
-        -o-transition: all .6s;
-        transition: all .6s;
-    }
-    .overlay ul li {
-        &.btn-startint,
-        a {
+    .overlay ul {
+        top: 50%;
+        li {
             display: block;
+            margin-bottom: 1em;
             position: relative;
-            color: #fff;
-            text-decoration: none;
-            overflow: hidden;
-            padding: 0;
-            line-height: 2em;
-            &.v-mobile {
-                display: none;
+            cursor: pointer;
+            opacity: 0;
+            opacity: 1\9\0;
+            transition: all .6s;
+            // margin: 0 !important;
+            margin: 2% 0 !important;
+            &::after {
+                content: none;
+            }
+            &:last-child {
+                width: auto;
+                display: inline-block;
+                padding: 0.2em 2em;
+            }
+            &.btn-startint,
+            a {
+                display: block;
+                position: relative;
+                color: #fff;
+                text-decoration: none;
+                overflow: hidden;
+                padding: 0;
+                line-height: 2em;
+                &.v-mobile {
+                    display: none;
+                }
+            }
+            span {
+                display: block;
+                position: relative;
+                color: #fff;
+                text-decoration: none;
+                overflow: hidden;
             }
         }
-    }
-    .overlay ul li span {
-        display: block;
-        position: relative;
-        color: #fff;
-        text-decoration: none;
-        overflow: hidden;
     }
     .overlay.open {
         opacity: 0.9;
         visibility: visible;
         height: 100%;
-    }
-    .overlay.open li {
-        -webkit-animation: fadeInRight 0.5s ease forwards;
-        animation: fadeInRight 0.5s ease forwards;
-        -webkit-animation-delay: 0.35s;
-        animation-delay: 0.35s;
+        li {
+            -webkit-animation: fadeInRight 0.5s ease forwards;
+            animation: fadeInRight 0.5s ease forwards;
+            -webkit-animation-delay: 0.35s;
+            animation-delay: 0.35s;
+        }
     }
     .overlay.open li:nth-child(2) {
         -webkit-animation-delay: 0.4s;
