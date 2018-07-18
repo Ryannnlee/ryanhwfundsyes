@@ -544,9 +544,36 @@ footer .footerBar p {
   }
 }
 
+.footer-icon ul > li.free999phone {
+  display: none;
+}
+
 .footer-icon-open {
   bottom: 20px;
   opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footerBar {
+    padding: 20px 0 120px;
+  }
+  .footer-icon ul > li {
+    margin: 0 8px;
+    width: 40px;
+    height: 40px;
+    vertical-align: bottom;
+  }
+  .footer-icon ul > li a {
+    font-size: 0.5em;
+    line-height: 40px;
+  }
+  .footer-icon ul > li.free999phone {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    border-radius: 0;
+    background: none;
+  }
 }
 
 body {
