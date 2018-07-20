@@ -76,6 +76,23 @@ footer {
                 background: url(../images/wbtn_mail.png) center no-repeat;
                 background-size: cover;
             }
+            &:nth-child(4) {
+                position: relative;
+                line-height: 58px;
+                a::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-top: 1px solid #ffffff;
+                    border-left: 1px solid #ffffff;
+                    @include transform(rotate(45deg));
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
             @media screen and (min-width: 1024px) {
                 &:hover {
                     @include transform(translate(0, -10px));

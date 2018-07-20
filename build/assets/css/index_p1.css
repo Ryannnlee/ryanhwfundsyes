@@ -2,9 +2,8 @@
 .kv {
   width: 100%;
   padding-bottom: 40%;
-  background: url(../images/kv.jpg) center no-repeat;
+  background: url(../images/kv.gif) center no-repeat;
   background-size: cover;
-  background-color: #666666;
   position: relative;
   margin-top: 50px;
 }
@@ -195,6 +194,8 @@ h1 > img {
   width: 100%;
   padding-left: 20px;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #recommend .f-tnc ul li::before {
@@ -287,6 +288,18 @@ h1 > img {
 
 #activity-method .act-item li:nth-child(6)::before {
   content: '06';
+}
+
+#activity-method .act-item li:nth-child(7)::before {
+  content: '07';
+}
+
+#activity-method .act-item li:nth-child(8)::before {
+  content: '08';
+}
+
+#activity-method .act-item li:nth-child(9)::before {
+  content: '09';
 }
 
 #activity-method .act-item li > span {
@@ -454,7 +467,9 @@ h1 > img {
 
 @media screen and (max-width: 767px) {
   .kv {
-    padding-bottom: calc(100vh - 50px);
+    padding-bottom: 179%;
+    background: url(../images/kv_m.gif) center no-repeat;
+    background-size: cover;
   }
   .kv .btn-allfree {
     left: 0;
