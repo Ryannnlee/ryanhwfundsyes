@@ -307,6 +307,10 @@ h1 > img {
   font-size: 1.2em;
 }
 
+#activity-method .act-item li > img {
+  margin: 5% 0;
+}
+
 #activity-method .low-apply {
   display: block;
   clear: both;
