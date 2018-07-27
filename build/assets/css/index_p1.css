@@ -78,7 +78,12 @@ h1 > img {
   color: #ffffff;
   font-size: 1.875em;
   line-height: 1.4em;
-  padding: 0 3%;
+  padding: 5px 3%;
+}
+
+#recommend .f-title span {
+  display: block;
+  color: #ffce5d;
 }
 
 #recommend .f-content {
@@ -306,6 +311,10 @@ h1 > img {
   content: '09';
 }
 
+#activity-method .act-item li:nth-child(10)::before {
+  content: '10';
+}
+
 #activity-method .act-item li > span {
   color: #d30000;
   font-size: 1.2em;
@@ -337,7 +346,8 @@ h1 > img {
   border: 2px solid #a5987a;
 }
 
-#activity-method .l-table {
+#activity-method .l-table,
+#activity-method .l-table2 {
   width: 96%;
   max-width: 1000px;
   display: table;
@@ -347,12 +357,19 @@ h1 > img {
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-#activity-method .l-tr {
+#activity-method .l-table2 {
+  margin: 0.5em 0;
+}
+
+#activity-method .l-tr,
+#activity-method .l-tr2 {
   display: table-row;
 }
 
 #activity-method .l-th,
-#activity-method .l-td {
+#activity-method .l-td,
+#activity-method .l-th2,
+#activity-method .l-td2 {
   font-weight: 500;
   display: table-cell;
   padding: 10px 5px;
@@ -361,7 +378,24 @@ h1 > img {
   line-height: 1.25em;
 }
 
-#activity-method .l-th {
+#activity-method .l-th2,
+#activity-method .l-td2 {
+  vertical-align: middle;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+#activity-method .l-th2:nth-child(1),
+#activity-method .l-td2:nth-child(1) {
+  width: 5%;
+}
+
+#activity-method .l-td2 > span {
+  font-weight: bold;
+  color: #cd0000;
+}
+
+#activity-method .l-th,
+#activity-method .l-th2 {
   font-weight: bold;
   background: #a5987a;
   color: #ffffff;
@@ -371,10 +405,26 @@ h1 > img {
   background: #f5f5f5;
 }
 
+#activity-method .l-td2:nth-child(even) {
+  background: #f5f5f5;
+}
+
+#activity-method .l-td2:first-child {
+  background: #f5f5f5;
+}
+
 #activity-method .l-td > span {
   font-weight: 900;
   font-size: 1.5em;
   color: #cd0000;
+}
+
+#activity-method .tableTnc {
+  width: 96%;
+  max-width: 1000px;
+  font-size: 0.7em;
+  line-height: 1.25em;
+  font-weight: 400;
 }
 
 #activity-method .divide-line {
@@ -486,7 +536,11 @@ h1 > img {
   }
   #recommend .f-title {
     padding: 3%;
+    font-size: 1.6em;
     line-height: 1.2em;
+  }
+  #recommend .f-title span {
+    display: initial;
   }
   #recommend .rs-table {
     width: 100%;
@@ -514,6 +568,9 @@ h1 > img {
   }
   #activity-method .act-item li {
     font-size: 1.2em;
+    line-height: 1.4em;
+    padding-left: 30px;
+    margin-bottom: 15px;
   }
   #activity-method .act-item li::before {
     width: 27px;
@@ -526,5 +583,12 @@ h1 > img {
   }
   .free999 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #activity-method .l-th2,
+  #activity-method .l-td2 {
+    font-size: 0.5em;
   }
 }
